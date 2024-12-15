@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #0f172a;
+  color: #cbd5e1;
+}
+h1 {
+  font-size: 3.6rem;
+}
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 1.6rem;
+  background-color: #cbd5e1;
+  color: #0f172a;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav {
+  padding: 1.2rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5px;
+}
+
+.logo-name {
+  font-style: italic;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.user {
+  font-size: 2.4rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1.2rem;
+  background-color: #1e293b;
+  padding: 2rem;
+  border-radius: 5px;
+
+  margin-bottom: 2.4rem;
+}
+
+.form input {
+  padding: 0.8rem 1rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.form textarea {
+  padding: 0.8rem 1rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+.form select {
+  padding: 0.8rem 1rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  padding: 0.8rem 1rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 5px;
+
+  background-color: #0f172a;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 1.2rem;
+}
+
+.project {
+  background-color: #1e293b;
+  padding: 2rem;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 1.2rem;
+}
+
+.project-status {
+  font-size: 1.6rem;
+}
+
+.project-name {
+  font-size: 2.4rem;
+}
+
+.btn-edit-delete {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.btn-edit,
+.btn-delete {
+  font-size: 1.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.btn-delete {
+  background-color: #dc2626;
+  color: #fecaca;
+}
+
+.btn-edit {
+  background-color: #cbd5e1;
+  color: #0f172a;
+}
+
+.project-link {
+  font-size: 1.6rem;
+  color: #63b3ed;
+  margin-bottom: 1.2rem;
+}
+
+.github-link {
+  font-size: 1.6rem;
+  color: #3b82f6;
+}
+.github-link:hover {
+  font-size: 1.6rem;
+  color: #60a5fa;
+}
+
+.project-description {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.no-projects {
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.last-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  font-size: 1.2rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  align-items: center;
+  justify-content: center;
+}
+
+.form-edit {
+  width: 500px;
+}
+
+.close {
+  font-size: 4.8rem;
+  cursor: pointer;
+}
+
+.edit-close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2.4rem;
+}
+
+.ai {
+  height: 100%;
+}
+.ai .btn-generate {
+  padding: 0.8rem 1rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  background-color: #cbd5e1;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+
+.ai h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.ai p {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+  color: #94a3b8;
+}
+
+.idea-container {
+  background-color: #1e293b;
+  padding: 2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai button {
+  padding: 0.8rem 1rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.status-c {
+  color: #86efac;
+}
+
+.status-n {
+  color: #fca5a5;
+}
+
+.status-w {
+  color: #fef08a;
+}
